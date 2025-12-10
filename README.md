@@ -8,20 +8,18 @@ The human genome is partitioned into functional compartments that replicate at s
 
 
 Scripts for the analysis of PARTAGE data
-Consists of four jupyter notebook files
+Consists of four jupyter notebook files, an R script, and two conda env files
 
-PARTAGE_RT.ipynb: Used for calculating and plotting partage data. 
-Requires RPKM data for G1 samples and other timepoints. Will output 
-correlation graph and PARTAGE heatmap representing the replication 
-timing.
+PARTAGE_RT.ipynb: Used for calculating and plotting partage data. Requires RPKM data for G1 samples and other timepoints. Will output correlation graph and PARTAGE heatmap representing the replication timing.
 
-rna_enrichment_corr.ipynb: Used for calculating clusters and 
-enrichment analysis of expression data, along with self-correlation and 
-correlation between pseudo-RT and expression.
+rna_enrichment_corr.ipynb: Used for calculating clusters and enrichment analysis of expression data, along with self-correlation and correlation between pseudo-RT and expression.
 
-CNV_Analysis_plot.ipynb: Used for plotting copy number variation along 
-with called deletions and duplications called by CNVpytor. Outputs calls
-text file for use with ProOvErlap
+CNV_Analysis_plot.ipynb: Used for plotting copy number variation along with called deletions and duplications called by CNVpytor. Outputs calls text file for use with ProOvErlap
 
-convert_calls_to_bed.ipynb: convert text file output to bed for
-ProOvErlap
+convert_calls_to_bed.ipynb: convert text file output to bed for ProOvErlap
+
+QuantileNorm_Smoothing_10kb.R: Used for the quantile normalization and loess smoothing of the log2 RT data. Package requirements and usage are listed inside.
+
+partage_data_analysis_environment.yml: YML file containing the packages used for the conda environment for the plotting and analysis of the PARTAGE data
+
+pipeline_environment.yml: YML file containing hte packages used for the conda environment for the processing of raw fastq files to RPKM and log2 RT files.
