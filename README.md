@@ -22,4 +22,4 @@ QuantileNorm_Smoothing_10kb.R: Used for the quantile normalization and loess smo
 
 partage_data_analysis_environment.yml: YML file containing the packages used for the conda environment for the plotting and analysis of the PARTAGE data
 
-pipeline_environment.yml: YML file containing hte packages used for the conda environment for the processing of raw fastq files to RPKM and log2 RT files.
+pipeline_environment.yml: YML file containing the packages used for the conda environment for the processing of raw fastq files to RPKM and log2 RT files.
